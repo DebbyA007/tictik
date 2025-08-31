@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Tictik: A Task Management Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To-Tick is a responsive and visually appealing task management web app built with React. It includes features such as user authentication (Login/Signup), task prioritization, due dates, and persistent task storage using the browser's `localStorage`. The app is styled with a sapphire-blue theme and supports both light and dark modes.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Authentication**: Login and Signup pages with validation.
+- **Task Management**:
+- Add tasks with titles, priorities (Low, Medium, High), and due dates.
+- View, filter, and delete tasks.
+- Persistent storage using `localStorage`.
+- **Responsive Design**:
+- Mobile-friendly with the use of media queries.
+- Beautiful sapphire-blue theme with white, black, and dark grey accents.
+- **Dark Mode**: Toggle between light and dark themes.
+- **Modern Styling**: Google Fonts (Roboto) and icons from `react-icons`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **React**: For building the user interface and routing.
+- **React Router**: For navigation between pages (Login, Signup, Tasks).
+- **React Icons**: For adding icons to enhance UI/UX.
+- **CSS3**: For styling and responsive design.
+- **localStorage**: For saving user data and tasks persistently.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Folder Structure
+To-Tick/├── public/│ └── index.html # Base HTML template with Google Fonts├── src/│ ├── components/│ │ ├── Login.js # Login page component│ │ ├── Signup.js # Signup page component│ │ ├── TaskList.js # Tasks page component│ ├── styles/│ │ └── global.css # Global styles (theme, fonts, etc.)│ ├── App.js # Main app with routing│ └── index.js # ReactDOM render├── README.md # Project documentation└── package.json # Dependencies and scripts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Run the Project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+- Node.js (v18 or later)
+- npm (Node Package Manager)
 
-### `npm run eject`
+### Steps to Run Locally
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the repository**:
+```bash
+git clone https://github.com/DebbyA007/Tictick.git
+cd To-Tick
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Install dependencies:
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#  Run the development server:
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Open your browser and navigate to http://localhost:3000.
 
-## Learn More
+# Deployment
+# Deploy to GitHub Pages
+# Add the homepage field in package.json: 
+"homepage": "https://DebbyA007.github.io/To-Tick"
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Build the app:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm run build
